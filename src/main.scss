@@ -1,11 +1,14 @@
 body * {
   outline: 1px solid lightgrey;
 }
+body {
+  font-size: 0;
+}
 .rectangle1{
   width: 481px;
   height: 698px;
   }
-.rectangleMain{
+.rectangleMain{ 
   width: 442px;
   height: 469px;
   margin:26px 20px 203px 19px;
@@ -13,7 +16,7 @@ body * {
 }
 .rectangle2{
   height: 49px;
-  width: 199px;
+   width: 199px;
   background-color: #358765;
   margin:0px 121px 17px 122px;
 }
@@ -26,6 +29,7 @@ body * {
   margin-right: 34px;
   margin-bottom: 17px;
   background-color: #588924;
+  box-sizing: border-box;
 }
 .rectangle4{
   display: inline-block;
@@ -36,6 +40,7 @@ body * {
   margin-right: 34px;
   margin-bottom: 17px;
   background-color: #588924;
+  box-sizing: border-box;
 }
 .rectangle6{
   display: inline-block;
@@ -51,8 +56,8 @@ body * {
   height: 147px;
   width: 147px;
   margin-top: 17px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 17px;
   background-color: #2d4bb5;
 }
@@ -61,8 +66,8 @@ body * {
   height: 147px;
   width: 147px;
   margin-top: 17px;
-  margin-left: 0px;
-  margin-right: 1px;
+  margin-left: 1px ;
+  margin-right: 0;
   margin-bottom: 17px;
   background-color: #edf111;
 }
@@ -70,5 +75,5 @@ body * {
   height: 55px;
   width: 442px;
   background-color: #C4C4C4;
-  margin:17px 0px  0px 0 px;
+  margin:17px 0 0 0 ;
 }
