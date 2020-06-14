@@ -76,11 +76,11 @@ background-color: #EDF111;
 .two-block {
   display: flex;
   width: 100%;
-  justify-content:space-around;
+  justify-content:space-between;
   flex-direction: row-reverse;
 }
 .block {
-  background-color: blue;
+  background-color: rgb(98, 228, 23);
   width: 150px;
   height: 200px;
   
