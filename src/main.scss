@@ -1,6 +1,37 @@
 body * {
   outline: 1px solid lightgrey;
 }
+.upper{
+  max-width: 1200px;
+  height: 130px;
+  display: flex;
+  
+}
+
+.rabbit {
+  width: 93px;
+  height: 110px;
+ }
+
+ .names {
+  height: 100%;
+   
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+ }
+.orange {
+
+  color: rgb(230, 138, 34);
+  }
+
+  .rabbit {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+
 .container {
 max-width: 1200px;
 margin: 0 auto;
