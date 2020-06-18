@@ -1,57 +1,61 @@
 body * {
   outline: 1px solid lightgrey;
 }
-.upper{
+.upper {
   max-width: 1200px;
-  height: 130px;
   display: flex;
-  
+  margin: 0 auto;
+}
+.img {
+}
+.container1 {
+  display: flex;
+}
+
+.image-rabbit {
+  width: 100px;
+  height: 100px;
+}
+
+.names {
+  height: 100%;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 40px;
+}
+.orange {
+  color: rgb(230, 138, 34);
+  font-size: xx-large;
 }
 
 .rabbit {
-  width: 93px;
-  height: 110px;
- }
-
- .names {
-  height: 100%;
-   
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
- }
-.orange {
-
-  color: rgb(230, 138, 34);
-  }
-
-  .rabbit {
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: xx-large;
+}
 
 .container {
-max-width: 1200px;
-margin: 0 auto;
-display: flex;
-align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .slider {
   height: 200px;
   background-image: url(../../img/oranges.jpg);
-border-top: 5px solid black;
-border-bottom: 5px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
 }
-
 
 .slider-container {
   height: 100%;
 }
 .slider-content {
-text-align: center;
+  text-align: center;
 }
 .slider-line {
   text-transform: uppercase;
