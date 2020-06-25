@@ -1,29 +1,18 @@
 body * {
   outline: 1px solid lightgrey;
 }
-.upper {
+.header {
   max-width: 1200px;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  
-  
 }
 
 .container1 {
   display: flex;
- 
 }
 .button-rabbit {
-  background-image: url(../../img/rabbit.png);
-  width: 100px;
-  height: 100px;
-}
-
-img {
-  
-  max-width: 80%;
- 
+  display: flex;
 }
 
 .names {
@@ -33,7 +22,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 0px;
 }
 .orange {
   color: rgb(230, 138, 34);
@@ -49,10 +38,9 @@ img {
 
 .container2 {
   display: flex;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   color: rgb(112, 109, 105);
-  max-width: 1200px;
 }
 .name {
   margin: 0 30px;
@@ -91,66 +79,105 @@ img {
   background-color: rgb(230, 138, 34);
   color: rgb(122, 119, 119);
 }
-.middle-container {
-  display: flex;
-}
 
 .news-block {
   max-width: 1200px;
   display: flex;
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
+.colum-news {
+  margin: 20px;
+}
+.colum-news1 {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.colum-news2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.read {
+  text-align: end;
+  color: orange;
+  font-style: italic;
+}
+
 .middle-string {
   display: flex;
   justify-content: center;
   color: orange;
-  font-size: 40px;
+  font-size: 35px;
   text-decoration: underline;
   margin: 0 auto;
   max-width: 1200px;
+  margin-bottom: 20px;
 }
 .img-block {
- 
-  justify-content: space-between;
   max-width: 1200px;
   display: flex;
   margin: 0 auto;
   text-align: center;
- 
 }
 .block1 {
-
-width: 33.3%;
-
-
+  width: 33.3%;  
 }
 
 .block2 {
-
-width: 33.3%;
-margin: 0 20px;
-
+  width: 33.3%;
+  margin: 0 20px;
 }
 .block3 {
-
-width: 33.3%;
-}  
-
+  width: 33.3%;
+}
 .colortext {
   color: orange;
- }
-p {
-  font-size: 10px;
+}
+.block-text{
+  margin: 20px;
+}
+.message{
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
+.list {
+ color: orange; 
+ font-size: 30px;
+}
+.submit {
+  display: flex;
+  color: white;
+  text-align: center;
+  flex-direction: row-reverse;
+  
+}
+.submit1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+}
+.list1 {
+  background-color: gray;
+  width: 80%;
+}
+
+
 .footer {
-  height: 30px; 
+  height: 30px;
   background-color: orange;
   text-transform: uppercase;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
