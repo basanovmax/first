@@ -13,8 +13,7 @@ const sass = require('gulp-sass');
 const browsersync = require('browser-sync');
 const fs = require("fs");
 const replace = require('gulp-replace');
-const cleanCSS = require('gulp-clean-css');
-
+​
 const path = {
   dist: {
     html: 'dist/',
@@ -39,7 +38,7 @@ const path = {
   },
   clean: './dist'
 };
-
+​
 const serverConfig = {
   server: {
     baseDir: "./dist"
@@ -50,8 +49,8 @@ const serverConfig = {
   logPrefix: "IT-academy",
   notify: false
 };
-
-
+​
+​
 const cleanDist = (cb) => {
   if(fs.existsSync('./dist')) {
     return src(path.clean)
@@ -59,7 +58,7 @@ const cleanDist = (cb) => {
   }
   cb();
 };
-
+​
 const httpBuild = () => src(path.src.html)
   .pipe(include({
     prefix: '@@',
@@ -68,21 +67,22 @@ const httpBuild = () => src(path.src.html)
   .pipe(replace(/(<link rel="stylesheet" href=".\/)(main.)scss(">)/, '$1css/$2css$3'))
   .pipe(dest(path.dist.html))
   .pipe(browsersync.stream());
-
+​
 const stylesBuild = () => src(path.src.style)
   .pipe(sourcemaps.init())
+  .pipe(plumber())
   .pipe(sass())
-  .pipe(replace(/(url\(")[.|..\/]+(img\/\D+.\D+"\))/, '$1../../$2'))
-  .pipe(cleanCSS({compatibility: 'ie11'}))
+  .pipe(replace(/(url\(")[.|..\/]+(img\/.+\..+"\))/g, '$1../../$2'))
+  .pipe(plumber.stop())
   .pipe(sourcemaps.write('./maps/'))
   .pipe(dest(path.dist.css))
   .pipe(browsersync.stream());
-
+​
 const fontsBuild = () => src(path.src.fonts).pipe(dest(path.dist.fonts)).pipe(browsersync.stream());
-
+​
 const imgsBuild = () => src(path.src.img).pipe(dest(path.dist.img)).pipe(browsersync.stream());
 const jsBuild = () => src(path.src.js).pipe(dest(path.dist.js)).pipe(browsersync.stream());
-
+​
 const server = () => {
   browsersync.init(serverConfig);
   
@@ -91,13 +91,12 @@ const server = () => {
   watch(path.src.img, imgsBuild);
   watch(path.src.fonts, fontsBuild);
   watch(path.src.js, jsBuild);
+  
 };
-
+​
 const build = series(
   cleanDist,
-  parallel(httpBuild, stylesBuild, fontsBuild, imgsBuild, jsBuild)
-  );
+  parallel(httpBuild, stylesBuild, fontsBuild, imgsBuild, jsBuild));
 exports.start = series(build, server);
-exports.clean = cleanDist;
-exports.build = build;
-
+exports.clean = series(cleanDist);
+exports.build = series(build);
