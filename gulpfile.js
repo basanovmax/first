@@ -100,4 +100,3 @@ const build = series(
 exports.start = series(build, server);
 exports.clean = series(cleanDist);
 exports.build = series(build);
-
