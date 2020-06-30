@@ -1,3 +1,41 @@
 body * {
   outline: 1px solid lightgrey;
 }
+.main {
+  background-image: url("../../img/bread.jpg");
+  width: 1600px;
+  height: 900px;
+}
+.header {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.gustoso {
+  font-size: 30px;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.twitter{
+  width: 20px;
+  height: 20px;
+}
+.facebook{
+  width: 20px;
+  height: 20px;
+}
+.instagram{
+  width: 20px;
+  height: 20px;
+}
