@@ -5,6 +5,10 @@ body * {
   background-image: url("../../img/bread.jpg");
   width: 1600px;
   height: 900px;
+  color: white;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 .header {
   margin: 0 auto;
@@ -13,29 +17,67 @@ body * {
   justify-content: space-between;
   align-items: center;
   height: 50px;
+ 
 }
 .gustoso {
   font-size: 30px;
+  margin-right: 40px;
 }
 .list {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
+  font-size: 20px;
+
 }
 .social {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
-.twitter{
+.twitter {
+  width: 20px;
+  height: 20px;
+  margin-left: 40px;
+}
+.facebook {
+  width: 20px;
+  height: 20px;
+  margin: 0 20px;
+  background-size: cover;
+}
+.logo_img{
+  max-width: 100%;
+  max-width: 100%;
   width: 20px;
   height: 20px;
 }
-.facebook{
+.instagram {
   width: 20px;
   height: 20px;
 }
-.instagram{
-  width: 20px;
-  height: 20px;
+.center{
+  text-align: center;
+  font-size: 3em;
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+.textCenter{
+  text-align: center;
+  font-weight: lighter;
+}
+.our_menu{
+  height: 50px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgba($color: #808080, $alpha: 0.6);
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.bread_img{
+position: absolute;
+top: 882px;
+left: 774px;
+width: 50px;
+height: 45px;
+
 }
