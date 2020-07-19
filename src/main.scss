@@ -1,24 +1,190 @@
 body * {
-  outline: 1px solid lightgrey;
+ outline: 1px solid lightgrey;
+  
 }
 .header{
   background-image: url(../../img/bread.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+
+ }
+.navigation{
   max-width: 1200px;
   display: flex;
   margin: 0 auto;
-
-}
-.header-navigation{
-  width: 1200px;
-  display: flex;
-  margin: 0 auto;
+  justify-content: space-between;
+  font: 24px "Times New Roman",sans-serif;
 }
 .main-nav{
   display: flex;
+
 }
 .main-nav__list{
   display: flex;
+}
+.logo{
+  font-size: 44px;
+}
+.main-nav__item{
+  margin: 0 20px;
+}
+.social__item{
+  margin: 0 10px;
+}
+.intro{
+  margin-top: 200px;
+  text-align: center;
+  color: white;
+
+}
+.intro__title{
+  font-size: 92px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.img{
+  min-width: 100%;
+}
+.intro__text{
+font-size: 24px;
+margin-bottom: 65px;
+margin-top: 50px;
+}
+.intro__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 220px;
+  margin: 0 auto;
+  background: rgba(86,83,76,.5);
+  border: 1px dashed #9e9c93;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 5px;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.header-bread{
+ position: relative;
+ top: -50px;
+  width: 100px;
+  height: 100px;
+  background-image: url(/img/bread1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.cake{
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+.cake-wrapper{
+  display: flex; 
+  margin-top: 0;
+}
+.chef{
+  text-align: center;
+  font-size: 24px;
+}
+.chef__name{
+  vertical-align: middle;
+  font-size: 24px;
+  line-height: 24px;
+  color: #56534c;
+}
+.chef__name span{
+padding: 15px;
+border-bottom: 1px solid #d7d5ca;
+border-top: 1px solid #d7d5ca;
+}
+.chef__name img{
+  vertical-align: middle;
+  margin: 0 20px;
+}
+.chef__quote{
+  font-size: 24px;
+}
+.quote{
+  font-size: 40px;
+}
+.cake-info__title{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.cake-info__title__create{
+  font-size: 24px;
+  color: rgb(248, 137, 86);
+}
+.cake-tastes{
+position: relative;
+}
+.cake-tastes__row1 img{
+height: 250px;
+width: 295px;
+}
+.cake-tastes__row2 img{
+  height: 250px;
+  width: 295px;
+  }
+.cake_row1{
+  display: flex;
+  margin-bottom: 10px;
+  }
+.cake_row2{
+  display: flex;
+}
+.cake-tastes__row1{
+  margin-right: 10px;
+}
+.cake-tastes__row2{
+  margin-right: 10px;
+}
+.tastes-badge{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.pancake{
+  background-image: url(../../img/background-pancakes.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pancake-slider{
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  padding: 140px 0;
+}
+.pancake-info{
+  width: 55%;
+  background-color: #fff;
+}
+.pancake-info__title{
+  padding-top: 80px;
+  padding-left: 40px;
+  font-size: 48px;
+  font-weight: bold;
+}
+.pancake-info__title span{
+  font-size: 24px;
+  color: rgb(248, 137, 86);
+  font-weight: bold;
+}
+.pancakes-info__text{
+  padding: 40px;
 }
