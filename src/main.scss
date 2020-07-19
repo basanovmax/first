@@ -1,3 +1,24 @@
 body * {
   outline: 1px solid lightgrey;
 }
+.header{
+  background-image: url(../../img/bread.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+
+}
+.header-navigation{
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+.main-nav{
+  display: flex;
+}
+.main-nav__list{
+  display: flex;
+}
