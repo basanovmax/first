@@ -88,6 +88,7 @@ margin-top: 50px;
   max-width: 1200px;
   display: flex;
   margin: 0 auto;
+
 }
 .cake-wrapper{
   display: flex; 
@@ -163,28 +164,138 @@ width: 295px;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 .pancake-slider{
   max-width: 1200px;
   display: flex;
   margin: 0 auto;
   padding: 140px 0;
+  position: relative;
 }
 .pancake-info{
   width: 55%;
   background-color: #fff;
+ 
 }
 .pancake-info__title{
   padding-top: 80px;
   padding-left: 40px;
   font-size: 48px;
   font-weight: bold;
+  position: relative;
+
 }
 .pancake-info__title span{
-  font-size: 24px;
+  font-size: 20px;
   color: rgb(248, 137, 86);
   font-weight: bold;
+  text-transform: uppercase;
 }
 .pancakes-info__text{
   padding: 40px;
+}
+.pancakes-ready{
+  position: absolute;
+  background-image: url(../../img/ready-in-background.png);
+width: 200px;
+height: 200px;
+top: 80px;
+right: 50px;
+box-shadow:5px 5px 20px 7px rgba(105,80,58, 0.45);
+font-size: 24px;
+color: #a47d5e;
+text-transform: uppercase;
+text-align: center;
+}
+.pancakes-ready__times{
+  font-size: 80px;
+  font-weight: bold;
+}
+.pancakes-ready__minutes{
+  font-size: 20px;
+  text-transform: lowercase;;
+}
+.rating-area {
+	overflow: hidden;
+  width: 100px;
+  margin-left: 40px;
+  
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 20px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 20px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}
+.thumbs{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  }
+.arrow {
+display: flex;
+justify-content:center;
+align-items: center;
+}
+.round{
+  border-radius: 50%;
+}
+.thumb1, .thumb3{
+  margin: 0 30px;
+}
+
+.sandwich{
+  height: 100vh;
+  background-color: rgb(231, 230, 228);
+}
+.sandwich-wrap{
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.sandwich__title{
+  padding-top: 70px;
+  text-align: center;
+  font-size: 48px;
+  line-height: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #56534c;
+}
+.sandwich__title span{
+  line-height: 30px;
+  font-size: 14px;
+    color: #a47d5e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
